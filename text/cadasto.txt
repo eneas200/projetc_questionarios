@@ -1,0 +1,6 @@
+[logo da pagina]
+menu
+titulo
+formulario de cadastro
+
+rodape

@@ -2,84 +2,20 @@
 <html>
 <head>
 	<title>Teste</title>
-	<style type="text/css">
-		* {
-			 margin: 0;
-			 padding:0;
-		}
-
-		/*Propiedade position 
-			recebe 4 valores 
-			: static   ; por padão o elemento html ja e static;
-			  relative ; 
-			  absolute
-			  fixed
-			
-			posicionamento valores
-			: top, bottom
-			: left, right;
-
-		*/
-
-		.caixaForm{
-			position: relative;
-			top: 100px;
-			left:0;
-			width: 40%;
-			margin: 0 auto;
-		}
-		.formulario{
-			width: 100%;
-		} 
-		.campos{
-			width: 100%;
-			background: white;
-		}
-		.caixaForm h1 {
-			text-align: center;
-		}
-		.label {
-			display: block;
-			margin-left: 5px;
-		}
-		.input{
-			width: 100%;
-			height: 20px;
-			margin: 5px 0;
-		}
-		input[type=submit]{
-			position: absolute;
-			bottom: -35px;
-			right:0;
-		}
-		
+	<style type="text/css"></style>
+	<link rel="stylesheet" type="text/css" href="../codigo_css/frame-boot/node_modules/bootstrap/compiler/bootstrap.css">
+	<style>
+	
 	</style>
-
 </head>
 <body>
-	 
-	
-	<div class="caixaForm">
-		<h1>Formulario de Cadastro</h1>
-		<form class="formulario">
-			<div class="campos">
-				<label class="label" for="nome">Nome</label>
-				<input class="input" type="text" name="nome">
-			</div>
-			<div class="campos">
-				<label class="label" for="email">e-mail</label>
-				<input class="input" type="email" name="email">
-			</div>
-			<div class="campos">
-				<label class="label" for="senha">password</label>
-				<input class="input" type="password" name="senha">
-			</div class="campos">
-			<div>
-				<input type="submit" value="Enviar">
-				<p style="float:left">ja é cadastrado <a href="">acesse-ja</a></p>
-			</div>	
-		</form>
-	</div>
+    
+    </div>
 
+	 
+
+    <script defer src="../codigo_js/frame-boot/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script defer src="../codigo_js/frame-boot/node_modules/jquery/dist/jquery.js"></script>
+    <script defer src="../codigo_js/frame-boot/node_modules/popper.js/dist/umd/bootstrap.js"></script>
 </body>
 </html>

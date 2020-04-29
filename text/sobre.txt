@@ -1,0 +1,9 @@
+logo
+menu
+corpo:
+    imagem 
+    titulo da imagem
+    descrição
+
+rodape
+

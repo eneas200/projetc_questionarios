@@ -1,0 +1,18 @@
+[logo]
+menu:
+    home
+    sobre
+    desenvolvedores
+    login
+    cadastro
+    jogar
+
+[imagem sobre o quiz]
+titulo da imagem
+
+descrição informações sobre o quiz o que ele 
+é como é feito
+
+rodape 
+
+
