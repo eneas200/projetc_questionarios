@@ -1,0 +1,41 @@
+/* formatação da pagina comleta*/
+.corpo {
+font-family: "Roboto Slab", serif;
+background-color: #66CCFF;
+}
+
+/* formatação do menu de navegação */
+.cabecario {
+	width: 90%;
+	height: auto;
+	position: relative;
+	top: 0;
+	left:0;
+}
+/* formatação do memu da pagina*/
+#menu {
+	position: absolute;
+	bottom: -35px;
+	right: 0;
+}
+
+/* formatação da lista na tag nav*/
+#menu ul li {
+	display: inline;
+	margin-left: 20px;
+
+}
+/* 1ª formatação do link */
+#menu a {
+	text-decoration: none;
+	color: rgba(0,0,0,.8);
+}
+/* 2ª formatação do link */
+#menu a:hover{
+	text-decoration: underline;
+	color:black;
+}
+
+hr {
+	padding-top: -10px;
+}

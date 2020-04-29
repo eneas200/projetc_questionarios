@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../codigo_css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../codigo_css/login.css">
+    <link rel="stylesheet" type="text/css" href="../codigo_css/frame-boot/node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Quiz - Formulario de Login</title>
+</head>
+
+<body class="corpo">
+   <!-- titulo da pagina -->
+    <header class="cabecario">        
+      <div id="logo">
+          <img src="../img/geral.png">
+      </div>
+
+      <div id="menu">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+            <li><a href="cadastra.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="jogar.html">Jogar</a></li>
+          </ul>
+      </div>        
+    </header>
+
+    <hr>
+
+  <!-- corpo da pagina -->
+  <div class="conteudo-pagina">
+    <div id="quiz">
+        <h1 class="mb-3 ml-3">QUIZ</h1>
+        <h2 class="mb-3 ml-3" >Teste aqui seus conhecimentos sobre tecnologia.</h2>
+    </div>
+
+    
+    <!-- <center><h2>Formulario do </h2></center> -->
+
+    <form name="formLogin" class="formulario-login" action="login.html"  method="POST" onsubmit="return validarLogin()">
+
+      <!-- titulo do formulario -->
+      <h1 class="centro mb-4">Formulário de Usuário</h1>
+     
+      <!-- campo email -->
+      <div class="campos input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fas fa-id-badge"></i></span>
+        </div>
+        <input class="largura" type="email" name="email" id="email" placeholder="Entre com email" />
+      </div>
+      <span id="msg1"></span>
+      
+      <!-- campo de senha -->
+      <div class="campos input-group mt-3 mb-2">
+      
+        <div class="input-group-prepend ">
+          <span class="input-group-text"> <i class="fas fa-lock"></i></span>
+        </div>
+        <input class="largura2 " type="password" name="senha" id="senha" placeholder="use sua senha de cadastro para logar" /> 
+      </div>
+      <span id="msg2"></span>
+
+      <!--  botao enviar -->
+      <div id="botao">
+        <p class="p-left ml-1">Crie sua <a href="cadastra.html">conta já</a></p>
+        <input class="btn btn-outline-primary p-right" type="submit" value="Logar" />
+      </div>
+    </form>
+   
+
+ </div>
+ <script defer src="../codigo_js/frame-boot/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script defer src="../codigo_js/frame-boot/node_modules/jquery/dist/jquery.js"></script>
+  <script defer src="../codigo_js/frame-boot/node_modules/popper.js/dist/umd/bootstrap.js"></script>
+  <script defer src="../codigo_js/validaL.js"></script>
+</body>
+</html>
