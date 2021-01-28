@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../codigo_css/reset.css">
     <link rel="stylesheet" type="text/css" href="../codigo_css/desenvolvedores.css">
-    <link rel="stylesheet" type="text/css" href="../codigo_css/frame-boot/node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Quiz - Desenvolvedores</title>
 </head>
@@ -15,40 +15,64 @@
  
   <!-- cabeçario da pagina -->
  
-    <header class="cabecario">
-        <div id="img1">
-            <div id="logo">
-                <img src="../img/geral.png">
-            </div>
-            <div id="menu">
-                <ul>
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="sobre.html">Sobre</a></li>
-                  <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
-                  <li><a href="cadastra.html">Cadastro</a></li>
-                  <li><a href="login.html">Login</a></li>
-                  <li><a href="jogar.html">Jogar</a></li>
-                </ul>
-            </div>
-        </div>
+  <div class="container">
+    <!-- titulo da pagina -->
+    <div class="row">
+      <div class="col-md-12 col-sm-12 p-1">
+        <img src="../img/geral.png" width="100%"/>
+      </div>
+    </div>
+  
+  
+    
+    <header class="container">
+      
+        <nav >
+            <ul class="nav justify-content-end pt-2">
+                <li class="nav-item">
+                  <a class="text-dark nav-link active" href="home.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="text-dark nav-link" href="sobre.html">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="text-dark nav-link" href="desenvolvedores.html">Desenvolvedores</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="text-dark nav-link" href="cadastra.html">Cadastro</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="text-dark nav-link" href="login.html">Login</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="text-dark nav-link" href="jogar.html">Jogar</a>
+                </li>
+            </ul>
+        </nav>
+    
     </header>
- 
-    <hr>
+  
+    <hr class="border">
 
   <!-- corpo da pagina -->
   <div class="container" id="caixa">
-    <center><h2>Desenvolvedores</h2></center>
+    <h2 class="text-center">Desenvolvedores</h2>
 
     <!-- avatar 1 -->
-     <div class="card avatar1 bg-primary">
-        <img class="card-img-top img-larg" src="../img/img_avatar1.png">
-        <div class="card-body ">
-          <h1 class="card-title">Enéas Senna</h1>
-          <p class="card-text">
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          </p>
-           <a href="#" class="btn btn-primary">ver Perfil</a>
+    <div class="card avatar1 bg-primary">
+      <img class="card-img-top img-larg" src="../img/img_avatar1.png">
+      <div class="card-body ">
+        <h1 class="card-title">Enéas Senna</h1>
+        <p class="card-text">
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+        </p>
+          <a href="#" class="btn btn-primary">ver Perfil</a>
       </div>
     </div>
     
@@ -108,8 +132,7 @@
    <!-- rodape da pagina -->
   <div class="conteudo-rodape"></div>
 
-    <script defer src="../codigo_js/frame-boot/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script defer src="../codigo_js/frame-boot/node_modules/jquery/dist/jquery.js"></script>
-    <script defer src="../codigo_js/frame-boot/node_modules/popper.js/dist/umd/bootstrap.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

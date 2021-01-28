@@ -7,39 +7,61 @@
     <link rel="stylesheet" type="text/css" href="../codigo_css/reset.css">
     <link rel="stylesheet" type="text/css" href="../codigo_css/desenvolvedores.css">
     <link rel="Stylesheet" href="../codigo_css/quiz.css">
-    <link rel="stylesheet" type="text/css" href="../codigo_css/frame-boot/node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Quiz - Perguntas</title>
     
 </head>
 
 <body class="corpo">
-     <!-- cabeçario da pagina -->
- 
-    <header class="cabecario">
-        <div id="img1">
-            <div id="logo">
-                <img src="../img/geral.png">
-            </div>
-            <div id="menu">
-                <ul>
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="sobre.html">Sobre</a></li>
-                  <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
-                  <li><a href="cadastra.html">Cadastro</a></li>
-                  <li><a href="login.html">Login</a></li>
-                  <li><a href="jogar.html">Jogar</a></li>
-                  <li><a href="Home_Quiz.html">Quiz</a></li>
-                </ul>
+    <!-- cabeçario da pagina -->
+    <div class="container">
+        <!-- titulo da pagina -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12 p-1">
+            <img src="../img/geral.png" width="100%"/>
             </div>
         </div>
-    </header>
- 
-    <hr>
+        
+      
+        
+        <header class="container">
+        
+            <nav >
+                <ul class="nav justify-content-end pt-2">
+                    <li class="nav-item">
+                    <a class="text-dark nav-link active" href="home.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="text-dark nav-link" href="sobre.html">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="text-dark nav-link" href="desenvolvedores.html">Desenvolvedores</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="text-dark nav-link" href="cadastra.html">Cadastro</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="text-dark nav-link" href="login.html">Login</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="text-dark nav-link" href="jogar.html">Jogar</a>
+                    </li>
+                </ul>
+            </nav>
+        
+        </header>
+
+        <hr class="border">
 
 
 
-    <div id="quizContainer" class="container">
+    <!-- <div id="quizContainer" class="container">
         <div class="title">Computer Quiz</div>
         <div id="question" class="question"></div>
 
@@ -49,14 +71,12 @@
         <label class="option"><input type="radio" name="option" value="d" /><span id="opt4"></span> </label>
         <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
     </div>
-    <div id="result" class="container result" style="display:none;"></div>    
+    <div id="result" class="container result" style="display:none;"></div>     -->
     
 
 
-    <!-- <script src="script-perguntas.js"></script> -->
-    <script src="../codigo_js/perguntas.js" charset="utf-8"></script>
-    <script src="../codigo_js/quiz_resp.js" charset="utf-8"></script>
-  
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>  
 </body>
 
 </html>

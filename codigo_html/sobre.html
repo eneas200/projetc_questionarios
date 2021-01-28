@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../codigo_css/reset.css">
     <link rel="stylesheet" type="text/css" href="../codigo_css/sobre.css">
-    <link rel="stylesheet" type="text/css" href="../codigo_css/frame-boot/node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../codigo_css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Quiz - Sobre</title>
 </head>
@@ -14,27 +14,52 @@
 <body class="corpo">
   <!-- titulo da pagina -->
  
-    <header class="cabecario">
-        <div id="img1">
-            <div id="logo">
-                <img src="../img/geral.png">
-            </div>
-            <div id="menu">
-                <ul>
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="sobre.html">Sobre</a></li>
-                  <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
-                  <li><a href="cadastra.html">Cadastro</a></li>
-                  <li><a href="login.html">Login</a></li>
-                  <li><a href="jogar.html">Jogar</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <hr>
+  <div class="container">
+    <!-- titulo da pagina -->
+    <div class="row">
+      <div class="col-md-12 col-sm-12 p-1">
+        <img src="../img/geral.png" width="100%"/>
+      </div>
+    </div>
+  
+  
+    
+      <header class="container">
+        
+          <nav >
+              <ul class="nav justify-content-end pt-2">
+                  <li class="nav-item">
+                    <a class="text-dark nav-link active" href="home.html">Home</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="sobre.html">Sobre</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="desenvolvedores.html">Desenvolvedores</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="cadastra.html">Cadastro</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="login.html">Login</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="jogar.html">Jogar</a>
+                  </li>
+              </ul>
+          </nav>
+     
+      </header>
+    
+      <hr class="border">
     <!-- corpo da pagina -->
-    <div class="container">
-      <div class="card bg-primary" style="color: #fff">
+    <div class="mb-5">
+      <div class="p-3 card" style="background-color: #66CCFF;">
         <div class="card-body"></div>
           <h1 class="card-title">como funciona </h1>
           <p class="card-text">
@@ -53,8 +78,10 @@
       
 
     </div>
-   <script defer src="../codigo_js/frame-boot/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script defer src="../codigo_js/frame-boot/node_modules/jquery/dist/jquery.js"></script>
-    <script defer src="../codigo_js/frame-boot/node_modules/popper.js/dist/umd/bootstrap.js"></script>
+
+    
+   <!-- carregamento do bootstrap e jquery -->
+   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

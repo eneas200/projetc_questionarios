@@ -6,53 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" type="text/css" href="../codigo_css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="../codigo_css/home.css">
-    <link rel="stylesheet" type="text/css" href="../codigo_css/frame-boot/node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Quiz - Home</title>
 </head>
 
 <body class="corpo"> 
-  <!-- titulo da pagina -->
+  <div class="container">
+    <!-- titulo da pagina -->
+    <div class="row">
+      <div class="col-md-12 col-sm-12 p-1">
+        <img src="../img/geral.png" width="100%"/>
+      </div>
+    </div>
   
-    <header class="cabecario">
-        <img src="../img/geral.png"/>
-
-        <nav id="menu">
-            <ul >
-                <li><a href="home.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
-                <li><a href="cadastra.html">Cadastro</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="jogar.html">Jogar</a></li>
-            </ul>
-        </nav>
-   
-    </header>
   
-    <hr >
-
-  <!-- corpo da pagina -->
-   
-  <div class="container" style="color: #fff">
-
-    <figure class="img-Figure" id="centro-distribuicao">
-        <img src="../img/quiz1.jpg" class="img-quiz" width="100%" />
-        <figcaption class="imgFigcaption">O que é um quiz</figcaption>
-    </figure>
-
     
-    <p style="margin-top: 20px"><strong>Quiz</strong> (em <a href="https://pt.wikipedia.org/wiki/L%C3%ADngua_inglesa" target="_blank">ingle</a>: quiz, plural quizzes) é o nome dado a um jogo ou desporto mental no qual os jogadores (individualmente ou em equipas) tentam responder corretamente a questões que lhes são colocadas. Em alguns contextos, a palavra também é utilizada como sinónimo de teste informal para a avaliação de aquisição de conhecimentos ou capacidades em ambientes de aprendizagem.</p>
+      <header class="container">
+        
+          <nav >
+              <ul class="nav justify-content-end pt-2">
+                  <li class="nav-item">
+                    <a class="text-dark nav-link active" href="home.html">Home</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="sobre.html">Sobre</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="desenvolvedores.html">Desenvolvedores</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="cadastra.html">Cadastro</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="login.html">Login</a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="jogar.html">Jogar</a>
+                  </li>
+              </ul>
+          </nav>
+     
+      </header>
+    
+      <hr class="border">
+  
+    <!-- corpo da pagina -->
+     
+    <div class="container">
+      <figure class="img-Figure" id="centro-distribuicao">
+          <img src="../img/quiz1.jpg" class="img-fluid img-quiz" width="100%" />
+          <figcaption class="imgFigcaption">O que é um quiz</figcaption>
+      </figure>
+      
+      <p style="margin-top: 20px"><strong>Quiz</strong> (em <a href="https://pt.wikipedia.org/wiki/L%C3%ADngua_inglesa" target="_blank">ingle</a>: quiz, plural quizzes) é o nome dado a um jogo ou desporto mental no qual os jogadores (individualmente ou em equipas) tentam responder corretamente a questões que lhes são colocadas. Em alguns contextos, a palavra também é utilizada como sinónimo de teste informal para a avaliação de aquisição de conhecimentos ou capacidades em ambientes de aprendizagem.</p>
+  
+      <p>Enquanto <a target="_blank" href="https://pt.wikipedia.org/wiki/Jogo">jogo</a> ou <a target="_blank" href="https://pt.wikipedia.org/wiki/Passatempo">passatempo</a>, um quiz é normalmente pontuado segundo algum sistema, e os vencedores são os que atingem o maior número de pontos. Os quizzes podem ser temáticos ou generalistas, caso em que se colocam questões sobre cultura geral. O formato, pontuação, forma de resposta e duração dos quizzes pode variar muito. Em geral, as respostas podem ser dadas por escrito ou oralmente, na versão tradicional, e, mais recentemente, através de comandos wireless. O jogo é conduzido por um ou mais apresentadores[1].</p>
+  
+      <p>Quiz show na televisão neerlandesa (Außen Kandidaten, o "quizmaster", no meio e ladeado por concorrentes)
+      O formato de concursos de perguntas e respostas é também muito popular em contexto televisivo, com numerosos programas a serem produzidos e emitidos em vários países. Genericamente esses programas denominam-se quiz show.</p>
+    </div>
 
-    <p>Enquanto <a target="_blank" href="https://pt.wikipedia.org/wiki/Jogo">jogo</a> ou <a target="_blank" href="https://pt.wikipedia.org/wiki/Passatempo">passatempo</a>, um quiz é normalmente pontuado segundo algum sistema, e os vencedores são os que atingem o maior número de pontos. Os quizzes podem ser temáticos ou generalistas, caso em que se colocam questões sobre cultura geral. O formato, pontuação, forma de resposta e duração dos quizzes pode variar muito. Em geral, as respostas podem ser dadas por escrito ou oralmente, na versão tradicional, e, mais recentemente, através de comandos wireless. O jogo é conduzido por um ou mais apresentadores[1].</p>
-
-    <p>Quiz show na televisão neerlandesa (Außen Kandidaten, o "quizmaster", no meio e ladeado por concorrentes)
-    O formato de concursos de perguntas e respostas é também muito popular em contexto televisivo, com numerosos programas a serem produzidos e emitidos em vários países. Genericamente esses programas denominam-se quiz show.</p>
   </div>
 
-    <script defer src="../codigo_js/frame-boot/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script defer src="../codigo_js/frame-boot/node_modules/jquery/dist/jquery.js"></script>
-    <script defer src="../codigo_js/frame-boot/node_modules/popper.js/dist/umd/bootstrap.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

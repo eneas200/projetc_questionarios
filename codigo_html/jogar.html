@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../codigo_css/reset.css">
     <link rel="stylesheet" type="text/css" href="../codigo_css/jogar.css">
-    <link rel="stylesheet" type="text/css" href="../codigo_css/frame-boot/node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="Stylesheet" href="../codigo_css/quiz.css">
@@ -15,9 +15,10 @@
 
 <body class="corpo"> 
   <!-- titulo da pagina -->
-  
-    <header class="cabecario">
-        <div id="img1">
+  <div class="">
+
+      <header class="cabecario">
+          <div id="img1">
             <div id="logo">
                 <img src="../img/geral.png">
             </div>
@@ -35,34 +36,36 @@
     </header>
   
     <hr>
-
+    
   <!-- corpo da pagina -->
   <div class="descricao">
-    <div id="quiz">
+      <div id="quiz">
         <h1 class="mb-3 ml-3">QUIZ</h1>
         <h2 class="mb-3 ml-3" >Teste aqui seus conhecimentos sobre tecnologia.</h2>
     </div>
-
-
+    
+    
     <!-- jogo -->
     <div id="quizContainer" class="container">
         <div class="title">Computer Quiz</div>
         <div id="question" class="question"></div>
 
-            <label class="option"><input type="radio" name="option" value="a" /><span id="opt1"></span> </label>
-            <label class="option"><input type="radio" name="option" value="b" /><span id="opt2"></span> </label>
+        <label class="option"><input type="radio" name="option" value="a" /><span id="opt1"></span> </label>
+        <label class="option"><input type="radio" name="option" value="b" /><span id="opt2"></span> </label>
             <label class="option"><input type="radio" name="option" value="c" /><span id="opt3"></span> </label>
             <label class="option"><input type="radio" name="option" value="d" /><span id="opt4"></span> </label>
             <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
         </div>
-    <div id="result" class="container result" style="display:none;"></div> 
+        <div id="result" class="container result" style="display:none;"></div> 
 
-  </div>
-
-    <script defer src="../codigo_js/frame-boot/node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script defer src="../codigo_js/frame-boot/node_modules/jquery/dist/jquery.js"></script>
-    <script defer src="../codigo_js/frame-boot/node_modules/popper.js/dist/umd/bootstrap.js"></script>
-    <!-- <script src="script-perguntas.js"></script> -->
+    </div>
+    
+</div>
+    
+    <!-- carregamento do bootstrap e jquery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- carregamento de scripts funcionais -->
     <script src="../codigo_js/perguntas.js" charset="utf-8"></script>
     <script src="../codigo_js/quiz_resp.js" charset="utf-8"></script>
 </body>
